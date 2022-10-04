@@ -1,0 +1,658 @@
+{
+	"info": {
+		"_postman_id": "7514801a-563f-4c55-acad-2ad2128f2875",
+		"name": "Practica4 - Tienda de mascotas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12089600"
+	},
+	"item": [
+		{
+			"name": "POST/Crear mascota - 200",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let name = pm.variables.replaceIn(\"{{$randomFirstName}}\");\r",
+							"pm.environment.set(\"name\",name);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"//tomar id de llamada\r",
+							"let text1 = pm.response.text().split(':')[1];\r",
+							"let id = text1.split(',')[0];\r",
+							"pm.environment.unset(\"id\");\r",
+							"pm.environment.set(\"id\", id);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"//TESTS\r",
+							"pm.test(\"Validate some fields\",()=>{\r",
+							"pm.expect(pm.response.text()).to.include(\"id\");\r",
+							"pm.expect(pm.response.text()).to.include(\"category\");\r",
+							"pm.expect(pm.response.text()).to.include(\"name\");\r",
+							"});\r",
+							"pm.test(\"Response time below 1 sec\",()=>{\r",
+							"pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content type header should be application/json\",()=>{\r",
+							"pm.expect(pm.response.headers.get(\"Content-Type\")).eql(\"application/json\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that the name be equal to the dynamic variable\",()=>{\r",
+							"    let name = pm.environment.get(\"name\");\r",
+							"pm.expect(responseJson.name).to.be.eql(name);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that status variable is equal to available\",()=>{\r",
+							"    let status = pm.environment.get(\"status\");\r",
+							"pm.expect(responseJson.status).to.be.equal(status);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \n  \"category\": {\n    \n    \"name\": \"Perros raza grande\"\n  },\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/ Subir imagen -200",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate some fields\",()=>{\r",
+							"pm.expect(pm.response.text()).to.include(\"code\");\r",
+							"pm.expect(pm.response.text()).to.include(\"type\");\r",
+							"pm.expect(pm.response.text()).to.include(\"message\");\r",
+							"});\r",
+							"pm.test(\"Response time below 1 sec\",()=>{\r",
+							"pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content type header should be application/json\",()=>{\r",
+							"pm.expect(pm.response.headers.get(\"Content-Type\")).eql(\"application/json\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "image/jpeg",
+							"type": "file",
+							"src": "/C:/Users/cfolch/Downloads/wolf-7470530_1280.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/{{id}}/uploadImage",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"{{id}}",
+						"uploadImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/Regresa una mascota -200",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body is correct\",()=>{\r",
+							"pm.expect(pm.response.text()).to.include(\"id\");\r",
+							"pm.expect(pm.response.text()).to.include(\"category\");\r",
+							"pm.expect(pm.response.text()).to.include(\"name\")\r",
+							"\r",
+							"});\r",
+							"pm.test(\"Response time below 1 sec\",()=>{\r",
+							"pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content type header should be application/json\",()=>{\r",
+							"pm.expect(pm.response.headers.get(\"Content-Type\")).eql(\"application/json\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://{{url_base}}/v2/pet/{{id}}",
+					"protocol": "https",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT/Actualiza una mascota - 200",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate some fields\",()=>{\r",
+							"pm.expect(pm.response.text()).to.include(\"id\");\r",
+							"pm.expect(pm.response.text()).to.include(\"category\");\r",
+							"pm.expect(pm.response.text()).to.include(\"name\");\r",
+							"});\r",
+							"pm.test(\"Response time below 1 sec\",()=>{\r",
+							"pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content type header should be application/json\",()=>{\r",
+							"pm.expect(pm.response.headers.get(\"Content-Type\")).eql(\"application/json\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that the name be equal to the dynamic variable\",()=>{\r",
+							"   \r",
+							"pm.expect(responseJson.name).to.be.eql(pm.environment.get(\"name\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that status variable is equal to available\",()=>{\r",
+							"     let Petstatus = pm.environment.get(\"status\");\r",
+							"pm.expect(responseJson.status).to.be.eql(Petstatus);\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"{{id}}\",\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"Perros de raza pequeña\"\r\n  },\r\n  \"name\": \"{{name}}\",\r\n  \"photoUrls\": [\r\n    \"\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"lalala\"\r\n    }\r\n  ],\r\n  \"status\": \"{{status}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{url_base}}/v2/pet",
+					"protocol": "https",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/ Actualiza mascota formato form -200",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate some fields\",()=>{\r",
+							"pm.expect(pm.response.text()).to.include(\"code\");\r",
+							"pm.expect(pm.response.text()).to.include(\"type\");\r",
+							"pm.expect(pm.response.text()).to.include(\"message\");\r",
+							"});\r",
+							"pm.test(\"Response time below 1 sec\",()=>{\r",
+							"pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content type header should be application/json\",()=>{\r",
+							"pm.expect(pm.response.headers.get(\"Content-Type\")).eql(\"application/json\");\r",
+							"});\r",
+							"pm.test(\"Validate id is equal to pet id\",()=>{\r",
+							"let id = pm.environment.get(\"id\");    \r",
+							"pm.expect(responseJson.message).to.be.eql(id);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "lion",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://{{url_base}}/v2/pet/{{id}}",
+					"protocol": "https",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/Regresa mascota por status - 200",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"const responseJson = pm.response.json();\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate some fields\",()=>{\r",
+							"pm.expect(pm.response.text()).to.include(\"id\");\r",
+							"pm.expect(pm.response.text()).to.include(\"category\");\r",
+							"pm.expect(pm.response.text()).to.include(\"name\");\r",
+							"});\r",
+							"pm.test(\"Response time below 2 sec\",()=>{\r",
+							"pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content type header should be application/json\",()=>{\r",
+							"pm.expect(pm.response.headers.get(\"Content-Type\")).eql(\"application/json\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that status variable is equal to available\",()=>{\r",
+							"    let status = pm.environment.get(\"status\");\r",
+							"pm.expect(responseJson[0].status).to.be.eql(status);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"const searchIndex = responseJson.findIndex((item) => item.name==\"Jordon\");\r",
+							"console.log(responseJson[538]);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://{{url_base}}/v2/pet/findByStatus?status={{status}}",
+					"protocol": "https",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"findByStatus"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "{{status}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE/Elimina mascota - 200",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate some fields\",()=>{\r",
+							"pm.expect(pm.response.text()).to.include(\"code\");\r",
+							"pm.expect(pm.response.text()).to.include(\"type\");\r",
+							"pm.expect(pm.response.text()).to.include(\"message\");\r",
+							"});\r",
+							"pm.test(\"Response time below 1 sec\",()=>{\r",
+							"pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content type header should be application/json\",()=>{\r",
+							"pm.expect(pm.response.headers.get(\"Content-Type\")).eql(\"application/json\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://{{url_base}}/v2/pet/{{id}}",
+					"protocol": "https",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/Regresa una mascota Copy - 404",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"pm.test(\"Status code is 404 not found\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate some fields\",()=>{\r",
+							"pm.expect(pm.response.text()).to.include(\"code\");\r",
+							"pm.expect(pm.response.text()).to.include(\"type\");\r",
+							"pm.expect(pm.response.text()).to.include(\"message\");\r",
+							"});\r",
+							"pm.test(\"Response time below 1 sec\",()=>{\r",
+							"pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content type header should be application/json\",()=>{\r",
+							"pm.expect(pm.response.headers.get(\"Content-Type\")).eql(\"application/json\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://{{url_base}}/v2/pet/{{id}}",
+					"protocol": "https",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

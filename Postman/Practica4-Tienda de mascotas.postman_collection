@@ -59,6 +59,8 @@
 							"pm.test(\"Validate that status variable is equal to available\",()=>{\r",
 							"    let status = pm.environment.get(\"status\");\r",
 							"pm.expect(responseJson.status).to.be.equal(status);\r",
+							"console.log(status);\r",
+							"console.log(responseJson.status);\r",
 							"});\r",
 							""
 						],
@@ -80,7 +82,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \n  \"category\": {\n    \n    \"name\": \"Perros raza grande\"\n  },\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+					"raw": "{\n  \n  \"category\": {\n    \n    \"name\": \"Perros raza grande\"\n  },\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}"
 				},
 				"url": {
 					"raw": "https://petstore.swagger.io/v2/pet",

@@ -51,9 +51,9 @@ public class eCommerce {
         return accesstoken;
     }
 
-    @Name("ObtenerAdrressId")
+    @Name("ObtenerAddressId")
 
-    private String ObtenerAdrressId() {
+    private String ObtenerAddressId() {
 
         String token = ObtenerToken();
         System.out.println("token de función: " + token);
@@ -273,6 +273,10 @@ public class eCommerce {
                 .header("accept-language", "en-US,en;q=0.9")
                 .auth().preemptive().basic(uuid, access_token).body(bodyRequest).post();
 
+        JsonPath jsonResponse = response.jsonPath();
+
+        ad_id = jsonResponse.get("data.ad.ad_id");
+
         String body_response = response.getBody().prettyPrint();
         System.out.println("Codigo de respuesta" + " " + response.getStatusCode());
 
@@ -421,7 +425,7 @@ public class eCommerce {
     public void Put_EditarDireccion_200() {
 
         String token = ObtenerToken();
-        String id = ObtenerAdrressId();
+        String id = ObtenerAddressId();
         System.out.println("address id funciona: " + AddressId);
         System.out.println("uuid funciona: " + uuid);
 
@@ -567,7 +571,7 @@ public class eCommerce {
     public void Delete_Address_200(){
 
         String token = ObtenerToken();
-        String id = ObtenerAdrressId();
+        String id = ObtenerAddressId();
 
         System.out.println("uuid funciona: " + uuid);
 

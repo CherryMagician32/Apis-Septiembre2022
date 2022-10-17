@@ -5,8 +5,20 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/JAVA/api-sep-2022" />
+        <option name="gradleJvm" value="zulu-11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/JAVA/api-sep-2022" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/JAVA/apis-sep-2022" />
-        <option name="gradleJvm" value="17" />
+        <option name="gradleJvm" value="zulu-11" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/JAVA/apis-sep-2022" />

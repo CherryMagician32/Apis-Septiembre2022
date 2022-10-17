@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="eCommerce" tests="15" skipped="0" failures="0" errors="0" timestamp="2022-10-14T16:51:37" hostname="EN2110370" time="29.559">
+<testsuite name="eCommerce" tests="15" skipped="0" failures="0" errors="0" timestamp="2022-10-17T13:27:28" hostname="juanma-xps" time="33.524">
   <properties/>
-  <testcase name="Get_ListadoDirecciones_200()" classname="eCommerce" time="3.511"/>
-  <testcase name="Put_EditarDireccion_200()" classname="eCommerce" time="3.952"/>
-  <testcase name="post_CrearAnuncio_200()" classname="eCommerce" time="3.307"/>
-  <testcase name="post_CrearDireccion_200()" classname="eCommerce" time="1.878"/>
-  <testcase name="Post_ListarCategoria_200()" classname="eCommerce" time="0.311"/>
-  <testcase name="Delete_Address_200()" classname="eCommerce" time="2.152"/>
-  <testcase name="Test case: Obtener categorias" classname="eCommerce" time="0.561"/>
-  <testcase name="Get_ObtenerCuenta_200()" classname="eCommerce" time="1.482"/>
-  <testcase name="Put_EditarAnuncio_200()" classname="eCommerce" time="4.309"/>
-  <testcase name="Post_CrearUsuario_401()" classname="eCommerce" time="1.333"/>
-  <testcase name="Get_ListadoFavoritos_200()" classname="eCommerce" time="1.518"/>
-  <testcase name="Post_IngresarUsuario_200()" classname="eCommerce" time="1.388"/>
-  <testcase name="Patch_EditarUsuario_200()" classname="eCommerce" time="2.101"/>
-  <testcase name="Get_ListShops_200()" classname="eCommerce" time="0.719"/>
-  <testcase name="Post_CrearAlerta_200()" classname="eCommerce" time="1.004"/>
-  <system-out><![CDATA[Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-{
-    "access_token": "mc1xdff2c70be600f2d9f07b2f5f86deb6278a58075e_v2",
+  <testcase name="Get_ListadoDirecciones_200()" classname="eCommerce" time="3.229"/>
+  <testcase name="Put_EditarDireccion_200()" classname="eCommerce" time="1.928"/>
+  <testcase name="post_CrearAnuncio_200()" classname="eCommerce" time="5.033"/>
+  <testcase name="post_CrearDireccion_200()" classname="eCommerce" time="1.557"/>
+  <testcase name="Post_ListarCategoria_200()" classname="eCommerce" time="0.275"/>
+  <testcase name="Delete_Address_200()" classname="eCommerce" time="3.979"/>
+  <testcase name="Test case: Obtener categorias" classname="eCommerce" time="0.377"/>
+  <testcase name="Get_ObtenerCuenta_200()" classname="eCommerce" time="1.267"/>
+  <testcase name="Put_EditarAnuncio_200()" classname="eCommerce" time="3.885"/>
+  <testcase name="Post_CrearUsuario_401()" classname="eCommerce" time="0.92"/>
+  <testcase name="Get_ListadoFavoritos_200()" classname="eCommerce" time="1.853"/>
+  <testcase name="Post_IngresarUsuario_200()" classname="eCommerce" time="1.85"/>
+  <testcase name="Patch_EditarUsuario_200()" classname="eCommerce" time="2.444"/>
+  <testcase name="Get_ListShops_200()" classname="eCommerce" time="2.281"/>
+  <testcase name="Post_CrearAlerta_200()" classname="eCommerce" time="2.629"/>
+  <system-out><![CDATA[{
+    "access_token": "mc1xd42d44bb37df4d6de318e8f4400bb3f6f2285dad_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -80,7 +67,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1xdff2c70be600f2d9f07b2f5f86deb6278a58075e_v2",
+    "access_token": "mc1xd42d44bb37df4d6de318e8f4400bb3f6f2285dad_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -129,179 +116,12 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1xdff2c70be600f2d9f07b2f5f86deb6278a58075e_v2
+Token en funcion mc1xd42d44bb37df4d6de318e8f4400bb3f6f2285dad_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
-Request method:	GET
-Request URI:	https://webapi.segundamano.mx/addresses/v1/get
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		accept=application/json, text/plain, */*
-				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXhkZmYyYzcwYmU2MDBmMmQ5ZjA3YjJmNWY4NmRlYjYyNzhhNTgwNzVlX3Yy
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
     "addresses": {
-        "387d7f12-40c5-11ed-9b09-cb2a9152498a": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "376edf1c-40ed-11ed-9b09-1307d2ec6d02": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "cdec25f2-40ee-11ed-9b09-13d139d1e2c0": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "4633dd04-40f2-11ed-8863-63ed1c3af992": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "d954a77a-40f8-11ed-92eb-fb28b5ee9dc7": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "f54ae750-40f8-11ed-9b09-d3b970dbb163": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "539e432e-40f9-11ed-9b09-2fc536f5629a": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "535bc64a-4101-11ed-92eb-a3286a78b007": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "2451a360-41a6-11ed-8863-b3726707d362": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "7a6f5160-4323-11ed-9b09-cfcb15094bbe": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "0f5b47e8-434c-11ed-92eb-c343190180f7": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "a75a3170-434d-11ed-92eb-8fd89bf7c5cd": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "e7920870-4411-11ed-8863-57a97fede3d3": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "1de392d2-48ad-11ed-8863-2376f0589202": {
-            "exteriorInfo": "asdfasdf",
-            "interiorInfo": "135465",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "trabajo",
-            "contact": "Arturo Bahringer",
-            "phone": "1354654654",
-            "zipCode": "01000"
-        },
         "7474d6f4-48b4-11ed-8a03-933658b622cf": {
             "exteriorInfo": "sdfsdfsf",
             "interiorInfo": "2",
@@ -676,17 +496,6 @@ Body:			<none>
             "phone": "1354654654",
             "zipCode": "01000"
         },
-        "6e80ffc2-49a7-11ed-9b09-3f7302c32a00": {
-            "exteriorInfo": "sdf46546sf",
-            "interiorInfo": "2",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "La casa",
-            "contact": "Agente ventas",
-            "phone": "1354653654",
-            "zipCode": "01000"
-        },
         "eeba5308-4a35-11ed-92eb-9b4597b6a8f2": {
             "exteriorInfo": "sdfsdfsf",
             "interiorInfo": "2",
@@ -720,17 +529,6 @@ Body:			<none>
             "phone": "1354654654",
             "zipCode": "01000"
         },
-        "5986369a-4a43-11ed-8863-4fc3510b81a8": {
-            "exteriorInfo": "sdf46546sf",
-            "interiorInfo": "2",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "La casa",
-            "contact": "Agente ventas",
-            "phone": "1354653654",
-            "zipCode": "01000"
-        },
         "5cf1312c-4a43-11ed-92eb-5f4c29eb9d8d": {
             "exteriorInfo": "sdfsdfsf",
             "interiorInfo": "2",
@@ -740,17 +538,6 @@ Body:			<none>
             "alias": "El trabajo",
             "contact": "Agente ventas",
             "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "836895a6-4a49-11ed-92eb-87b8be020965": {
-            "exteriorInfo": "sdf46546sf",
-            "interiorInfo": "2",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "La casa",
-            "contact": "Agente ventas",
-            "phone": "1354653654",
             "zipCode": "01000"
         },
         "865d004e-4a49-11ed-8863-37164c9b3d26": {
@@ -764,17 +551,6 @@ Body:			<none>
             "phone": "1354654654",
             "zipCode": "01000"
         },
-        "b2b4e1f2-4b11-11ed-8863-0f63d462ae1b": {
-            "exteriorInfo": "sdf46546sf",
-            "interiorInfo": "2",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "La casa",
-            "contact": "Agente ventas",
-            "phone": "1354653654",
-            "zipCode": "01000"
-        },
         "b65c4ba6-4b11-11ed-8a03-ab3a2812f8f9": {
             "exteriorInfo": "sdfsdfsf",
             "interiorInfo": "2",
@@ -784,17 +560,6 @@ Body:			<none>
             "alias": "El trabajo",
             "contact": "Agente ventas",
             "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "42adabb0-4b1f-11ed-8863-1bd160dbb96d": {
-            "exteriorInfo": "sdf46546sf",
-            "interiorInfo": "2",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "La casa",
-            "contact": "Agente ventas",
-            "phone": "1354653654",
             "zipCode": "01000"
         },
         "47c0170a-4b1f-11ed-8a03-6fdc9f2b4411": {
@@ -808,17 +573,6 @@ Body:			<none>
             "phone": "1354654654",
             "zipCode": "01000"
         },
-        "4b51de94-4bd3-11ed-8863-e32d8ce5a16e": {
-            "exteriorInfo": "sdf46546sf",
-            "interiorInfo": "2",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "La casa",
-            "contact": "Agente ventas",
-            "phone": "1354653654",
-            "zipCode": "01000"
-        },
         "b295a2a0-4bd5-11ed-8863-17cdb39b624c": {
             "exteriorInfo": "sdfsdfsf",
             "interiorInfo": "2",
@@ -828,17 +582,6 @@ Body:			<none>
             "alias": "El trabajo",
             "contact": "Agente ventas",
             "phone": "1354654654",
-            "zipCode": "01000"
-        },
-        "b429d8e8-4bd5-11ed-9b09-43a372406255": {
-            "exteriorInfo": "sdf46546sf",
-            "interiorInfo": "2",
-            "region": 13,
-            "municipality": 348,
-            "area": 151876,
-            "alias": "La casa",
-            "contact": "Agente ventas",
-            "phone": "1354653654",
             "zipCode": "01000"
         },
         "36e81ec6-4bdf-11ed-92eb-73ac0a7386ae": {
@@ -851,24 +594,242 @@ Body:			<none>
             "contact": "Agente ventas",
             "phone": "1354654654",
             "zipCode": "01000"
+        },
+        "7ec6ab9e-4be0-11ed-8863-87a18c98981c": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
+        },
+        "7ffdf1fc-4be0-11ed-92eb-27e627ab9b95": {
+            "exteriorInfo": "sdf46546sf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "La casa",
+            "contact": "Agente ventas",
+            "phone": "1354653654",
+            "zipCode": "01000"
+        },
+        "199c9906-4c0b-11ed-8a03-cf06929c64d4": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
+        },
+        "1b64e6d0-4c0b-11ed-8a03-f7a47142b1f8": {
+            "exteriorInfo": "sdf46546sf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "La casa",
+            "contact": "Agente ventas",
+            "phone": "1354653654",
+            "zipCode": "01000"
+        },
+        "9c71fd80-4c0b-11ed-9b09-ff5dfad9472b": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
+        },
+        "9ea20eb0-4c0b-11ed-8a03-a7a0d110ded2": {
+            "exteriorInfo": "sdf46546sf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "La casa",
+            "contact": "Agente ventas",
+            "phone": "1354653654",
+            "zipCode": "01000"
+        },
+        "627978fa-4c0c-11ed-8863-8f986e1c0e6a": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
+        },
+        "642eb9a8-4c0c-11ed-8863-ef0974215ffa": {
+            "exteriorInfo": "sdf46546sf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "La casa",
+            "contact": "Agente ventas",
+            "phone": "1354653654",
+            "zipCode": "01000"
+        },
+        "64882166-4c0f-11ed-9b09-3f4c170c15ba": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
+        },
+        "660b619c-4c0f-11ed-92eb-1363f242ecc4": {
+            "exteriorInfo": "sdf46546sf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "La casa",
+            "contact": "Agente ventas",
+            "phone": "1354653654",
+            "zipCode": "01000"
+        },
+        "f74d83e2-4e1c-11ed-92eb-f337fb70f257": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
+        },
+        "f953f14e-4e1c-11ed-8a03-4361a7a6bd10": {
+            "exteriorInfo": "sdf46546sf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "La casa",
+            "contact": "Agente ventas",
+            "phone": "1354653654",
+            "zipCode": "01000"
+        },
+        "2d3efa76-4e1d-11ed-9b09-2baa54327faf": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
+        },
+        "2ec919d0-4e1d-11ed-92eb-6736291afb14": {
+            "exteriorInfo": "sdf46546sf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "La casa",
+            "contact": "Agente ventas",
+            "phone": "1354653654",
+            "zipCode": "01000"
+        },
+        "3f0a5a34-4e1d-11ed-8a03-0bce3fe54b78": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
+        },
+        "403f9964-4e1d-11ed-92eb-6fd69b83187e": {
+            "exteriorInfo": "sdf46546sf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "La casa",
+            "contact": "Agente ventas",
+            "phone": "1354653654",
+            "zipCode": "01000"
+        },
+        "4a6534c0-4e1e-11ed-8863-4f761131e034": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
+        },
+        "4c4f1184-4e1e-11ed-9b09-f7159e4b2bad": {
+            "exteriorInfo": "sdf46546sf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "La casa",
+            "contact": "Agente ventas",
+            "phone": "1354653654",
+            "zipCode": "01000"
+        },
+        "961432a4-4e1e-11ed-9b09-0f81a2a136f1": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
+        },
+        "97e3fb1e-4e1e-11ed-8a03-030ff1173a88": {
+            "exteriorInfo": "sdf46546sf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "La casa",
+            "contact": "Agente ventas",
+            "phone": "1354653654",
+            "zipCode": "01000"
+        },
+        "db6078b8-4e1e-11ed-92eb-07d80c261b0a": {
+            "exteriorInfo": "sdfsdfsf",
+            "interiorInfo": "2",
+            "region": 13,
+            "municipality": 348,
+            "area": 151876,
+            "alias": "El trabajo",
+            "contact": "Agente ventas",
+            "phone": "1354654654",
+            "zipCode": "01000"
         }
     }
 }
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x89222afac96685a6e3a326c91d102c23fe9f8ad2_v2",
+    "access_token": "mc1x384bed23efeca7f25fc6cdae2bc975783b272972_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -918,7 +879,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x89222afac96685a6e3a326c91d102c23fe9f8ad2_v2",
+    "access_token": "mc1x384bed23efeca7f25fc6cdae2bc975783b272972_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -967,24 +928,11 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x89222afac96685a6e3a326c91d102c23fe9f8ad2_v2
+Token en funcion mc1x384bed23efeca7f25fc6cdae2bc975783b272972_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x8d59a71b348319ad170f681adf2018ffafa28c2a_v2",
+    "access_token": "mc1xe8bdef996bf641e29519c197828258e7ea75deb1_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -1034,7 +982,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x8d59a71b348319ad170f681adf2018ffafa28c2a_v2",
+    "access_token": "mc1xe8bdef996bf641e29519c197828258e7ea75deb1_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -1083,84 +1031,27 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x8d59a71b348319ad170f681adf2018ffafa28c2a_v2
+Token en funcion mc1xe8bdef996bf641e29519c197828258e7ea75deb1_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
-token de funciÃ³n: mc1x8d59a71b348319ad170f681adf2018ffafa28c2a_v2
-access token: mc1x8d59a71b348319ad170f681adf2018ffafa28c2a_v2
+token de función: mc1xe8bdef996bf641e29519c197828258e7ea75deb1_v2
+access token: mc1xe8bdef996bf641e29519c197828258e7ea75deb1_v2
 account id funciona: /private/accounts/11881664
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/addresses/v1/create
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	contact=Agente ventas
-				phone=1354654654
-				rfc=CICC850612CV6
-				zipCode=01000
-				exteriorInfo=sdfsdfsf
-				interiorInfo=2
-				region=13
-				area=151876
-				alias=El trabajo
-				municipality=348
-Path params:	<none>
-Headers:		accept=application/json, text/plain, */*
-				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXg4ZDU5YTcxYjM0ODMxOWFkMTcwZjY4MWFkZjIwMThmZmFmYTI4YzJhX3Yy
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "addressID": "3918a62a-4bdf-11ed-8a03-57c22f481942"
+    "addressID": "dd3c245c-4e1e-11ed-8863-bfb1781554f7"
 }
 Codigo de respuesta 201
 body response {
-    "addressID": "3918a62a-4bdf-11ed-8a03-57c22f481942"
+    "addressID": "dd3c245c-4e1e-11ed-8863-bfb1781554f7"
 }
-address id funciona: 3918a62a-4bdf-11ed-8a03-57c22f481942
+address id funciona: dd3c245c-4e1e-11ed-8863-bfb1781554f7
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
-Request method:	PUT
-Request URI:	https://webapi.segundamano.mx/addresses/v1/modify/3918a62a-4bdf-11ed-8a03-57c22f481942
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	contact=Agente ventas
-				phone=1354653654
-				rfc=CICC850612CV6
-				zipCode=01000
-				exteriorInfo=sdf46546sf
-				interiorInfo=2
-				region=13
-				area=151876
-				alias=La casa
-				municipality=348
-Path params:	<none>
-Headers:		accept=application/json, text/plain, */*
-				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXg4ZDU5YTcxYjM0ODMxOWFkMTcwZjY4MWFkZjIwMThmZmFmYTI4YzJhX3Yy
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "message": "3918a62a-4bdf-11ed-8a03-57c22f481942 modified correctly"
+    "message": "dd3c245c-4e1e-11ed-8863-bfb1781554f7 modified correctly"
 }
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x0e0fefb40133aedcaf235b040e6a469f0008518a_v2",
+    "access_token": "mc1x4c7c8d41d0331e1af0d5dfc03badb94a45b44471_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -1210,7 +1101,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x0e0fefb40133aedcaf235b040e6a469f0008518a_v2",
+    "access_token": "mc1x4c7c8d41d0331e1af0d5dfc03badb94a45b44471_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -1259,11 +1150,11 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x0e0fefb40133aedcaf235b040e6a469f0008518a_v2
+Token en funcion mc1x4c7c8d41d0331e1af0d5dfc03badb94a45b44471_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
-token de funciÃ³n: mc1x0e0fefb40133aedcaf235b040e6a469f0008518a_v2
-access token: mc1x0e0fefb40133aedcaf235b040e6a469f0008518a_v2
+token de función: mc1x4c7c8d41d0331e1af0d5dfc03badb94a45b44471_v2
+access token: mc1x4c7c8d41d0331e1af0d5dfc03badb94a45b44471_v2
 account id funciona: /private/accounts/11881664
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
 Request method:	POST
@@ -1276,7 +1167,7 @@ Path params:	<none>
 Headers:		accept=application/json, text/plain, */*
 				x-source=PHOENIX_DESKTOP
 				accept-language=en-US,en;q=0.9
-				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXgwZTBmZWZiNDAxMzNhZWRjYWYyMzViMDQwZTZhNDY5ZjAwMDg1MThhX3Yy
+				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXg0YzdjOGQ0MWQwMzMxZTFhZjBkNWRmYzAzYmFkYjk0YTQ1YjQ0NDcxX3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -1296,7 +1187,7 @@ Body:
 {
     "data": {
         "ad": {
-            "ad_id": "74782403",
+            "ad_id": "74794695",
             "subject": "Te organizo tu evento",
             "category": {
                 "code": "8142",
@@ -1385,21 +1276,8 @@ Body:
     }
 }
 Codigo de respuesta 200
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1xfadf95b2eccf9e426bf1a860929ddfd5012f799f_v2",
+    "access_token": "mc1x37d0fef8ee5388240a5118095ec1dcc26b43ec32_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -1449,7 +1327,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1xfadf95b2eccf9e426bf1a860929ddfd5012f799f_v2",
+    "access_token": "mc1x37d0fef8ee5388240a5118095ec1dcc26b43ec32_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -1498,41 +1376,19 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1xfadf95b2eccf9e426bf1a860929ddfd5012f799f_v2
+Token en funcion mc1x37d0fef8ee5388240a5118095ec1dcc26b43ec32_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
-token de funciÃ³n: mc1xfadf95b2eccf9e426bf1a860929ddfd5012f799f_v2
-access token: mc1xfadf95b2eccf9e426bf1a860929ddfd5012f799f_v2
+token de función: mc1x37d0fef8ee5388240a5118095ec1dcc26b43ec32_v2
+access token: mc1x37d0fef8ee5388240a5118095ec1dcc26b43ec32_v2
 account id funciona: /private/accounts/11881664
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/addresses/v1/create
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	contact=Agente ventas
-				phone=1354654654
-				rfc=CICC850612CV6
-				zipCode=01000
-				exteriorInfo=sdfsdfsf
-				interiorInfo=2
-				region=13
-				area=151876
-				alias=El trabajo
-				municipality=348
-Path params:	<none>
-Headers:		accept=application/json, text/plain, */*
-				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXhmYWRmOTViMmVjY2Y5ZTQyNmJmMWE4NjA5MjlkZGZkNTAxMmY3OTlmX3Yy
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "addressID": "7ec6ab9e-4be0-11ed-8863-87a18c98981c"
+    "addressID": "78f5623c-4e1f-11ed-9b09-4f8914a26db4"
 }
 Codigo de respuesta 201
 body response {
-    "addressID": "7ec6ab9e-4be0-11ed-8863-87a18c98981c"
+    "addressID": "78f5623c-4e1f-11ed-9b09-4f8914a26db4"
 }
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/urls/v1/public/ad-listing?lang=es
@@ -1592,21 +1448,8 @@ body response {
         ]
     }
 }
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x52dd94b7c198a4fc30de363b0d6586418e025754_v2",
+    "access_token": "mc1x82f3c07a627664c4e77b5fc6ad8b5f59362173a0_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -1656,7 +1499,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x52dd94b7c198a4fc30de363b0d6586418e025754_v2",
+    "access_token": "mc1x82f3c07a627664c4e77b5fc6ad8b5f59362173a0_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -1705,24 +1548,11 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x52dd94b7c198a4fc30de363b0d6586418e025754_v2
+Token en funcion mc1x82f3c07a627664c4e77b5fc6ad8b5f59362173a0_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x40d4a9916601d559f16ff736e37584fe2f800bf4_v2",
+    "access_token": "mc1xe995bb5fdf02a0be2fc584244c4e3bd331f09ccf_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -1772,7 +1602,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x40d4a9916601d559f16ff736e37584fe2f800bf4_v2",
+    "access_token": "mc1xe995bb5fdf02a0be2fc584244c4e3bd331f09ccf_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -1821,57 +1651,35 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x40d4a9916601d559f16ff736e37584fe2f800bf4_v2
+Token en funcion mc1xe995bb5fdf02a0be2fc584244c4e3bd331f09ccf_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
-token de funciÃ³n: mc1x40d4a9916601d559f16ff736e37584fe2f800bf4_v2
-access token: mc1x40d4a9916601d559f16ff736e37584fe2f800bf4_v2
+token de función: mc1xe995bb5fdf02a0be2fc584244c4e3bd331f09ccf_v2
+access token: mc1xe995bb5fdf02a0be2fc584244c4e3bd331f09ccf_v2
 account id funciona: /private/accounts/11881664
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/addresses/v1/create
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	contact=Agente ventas
-				phone=1354654654
-				rfc=CICC850612CV6
-				zipCode=01000
-				exteriorInfo=sdfsdfsf
-				interiorInfo=2
-				region=13
-				area=151876
-				alias=El trabajo
-				municipality=348
-Path params:	<none>
-Headers:		accept=application/json, text/plain, */*
-				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXg0MGQ0YTk5MTY2MDFkNTU5ZjE2ZmY3MzZlMzc1ODRmZTJmODAwYmY0X3Yy
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "addressID": "7ffdf1fc-4be0-11ed-92eb-27e627ab9b95"
+    "addressID": "7b298b82-4e1f-11ed-8863-5b6f6a5b24cd"
 }
 Codigo de respuesta 201
 body response {
-    "addressID": "7ffdf1fc-4be0-11ed-92eb-27e627ab9b95"
+    "addressID": "7b298b82-4e1f-11ed-8863-5b6f6a5b24cd"
 }
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
 Request method:	DELETE
-Request URI:	https://webapi.segundamano.mx/addresses/v1/delete/7ffdf1fc-4be0-11ed-92eb-27e627ab9b95
+Request URI:	https://webapi.segundamano.mx/addresses/v1/delete/7b298b82-4e1f-11ed-8863-5b6f6a5b24cd
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		accept=application/json, text/plain, */*
-				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXg0MGQ0YTk5MTY2MDFkNTU5ZjE2ZmY3MzZlMzc1ODRmZTJmODAwYmY0X3Yy
+				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXhlOTk1YmI1ZmRmMDJhMGJlMmZjNTg0MjQ0YzRlM2JkMzMxZjA5Y2NmX3Yy
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 {
-    "message": "7ffdf1fc-4be0-11ed-92eb-27e627ab9b95 deleted correctly"
+    "message": "7b298b82-4e1f-11ed-8863-5b6f6a5b24cd deleted correctly"
 }
 Request method:	GET
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/public/categories/filter?lang=es
@@ -5690,21 +5498,8 @@ body response {
         }
     ]
 }
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x09e10a6655e0146651c704514981d14a71394c4a_v2",
+    "access_token": "mc1xeaac6e9d11a20531a9e343aace397d2e6fe06557_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -5754,7 +5549,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x09e10a6655e0146651c704514981d14a71394c4a_v2",
+    "access_token": "mc1xeaac6e9d11a20531a9e343aace397d2e6fe06557_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -5803,7 +5598,7 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x09e10a6655e0146651c704514981d14a71394c4a_v2
+Token en funcion mc1xeaac6e9d11a20531a9e343aace397d2e6fe06557_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
 Request method:	GET
@@ -5814,7 +5609,7 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		accept=application/json, text/plain, */*
-				authorization=tag:scmcoord.com,2013:api mc1x09e10a6655e0146651c704514981d14a71394c4a_v2
+				authorization=tag:scmcoord.com,2013:api mc1xeaac6e9d11a20531a9e343aace397d2e6fe06557_v2
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
@@ -5846,21 +5641,8 @@ Body:			<none>
         "uuid": "a0a51a23-85b5-48ef-bd57-27edf97e6443"
     }
 }
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x1495dd26e9c11766135ffa250b231b7764f6a696_v2",
+    "access_token": "mc1x13cdb962556f6bade463da510abef0593a1f9605_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -5910,7 +5692,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x1495dd26e9c11766135ffa250b231b7764f6a696_v2",
+    "access_token": "mc1x13cdb962556f6bade463da510abef0593a1f9605_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -5959,16 +5741,16 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x1495dd26e9c11766135ffa250b231b7764f6a696_v2
+Token en funcion mc1x13cdb962556f6bade463da510abef0593a1f9605_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
-token de funciÃ³n: mc1x1495dd26e9c11766135ffa250b231b7764f6a696_v2
-access token: mc1x1495dd26e9c11766135ffa250b231b7764f6a696_v2
+token de función: mc1x13cdb962556f6bade463da510abef0593a1f9605_v2
+access token: mc1x13cdb962556f6bade463da510abef0593a1f9605_v2
 account id funciona: /private/accounts/11881664
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
-ad id funciona : 74782403
+ad id funciona : 74794695
 Request method:	PUT
-Request URI:	https://webapi.segundamano.mx/v2/accounts/a0a51a23-85b5-48ef-bd57-27edf97e6443/up/74782403
+Request URI:	https://webapi.segundamano.mx/v2/accounts/a0a51a23-85b5-48ef-bd57-27edf97e6443/up/74794695
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -5976,7 +5758,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		accept=application/json, text/plain, */*
 				x-source=PHOENIX_DESKTOP
-				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXgxNDk1ZGQyNmU5YzExNzY2MTM1ZmZhMjUwYjIzMWI3NzY0ZjZhNjk2X3Yy
+				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXgxM2NkYjk2MjU1NmY2YmFkZTQ2M2RhNTEwYWJlZjA1OTNhMWY5NjA1X3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -5996,7 +5778,7 @@ Body:
 {
     "data": {
         "ad": {
-            "ad_id": "74782403",
+            "ad_id": "74794695",
             "subject": "Te organizo tu evento",
             "category": {
                 "code": "8142",
@@ -6029,24 +5811,6 @@ Body:
         }
     }
 }
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic YWdlbnRlVmVudGFzNzAxLjBAbWFpbGluYXRvci5jb206dGVzdDAxMDEwMTAx
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "account": {
-        "email": "agenteVentas701.0@mailinator.com"
-    }
-}
 {
     "error": {
         "code": "ACCOUNT_VERIFICATION_REQUIRED"
@@ -6058,21 +5822,8 @@ body response {
         "code": "ACCOUNT_VERIFICATION_REQUIRED"
     }
 }
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x20902ddb7bc4108d82b9690dcf918888ae85b4ff_v2",
+    "access_token": "mc1x92644c617c015d217c0471af3609c71a8fbb4a87_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -6122,7 +5873,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x20902ddb7bc4108d82b9690dcf918888ae85b4ff_v2",
+    "access_token": "mc1x92644c617c015d217c0471af3609c71a8fbb4a87_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -6171,7 +5922,7 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x20902ddb7bc4108d82b9690dcf918888ae85b4ff_v2
+Token en funcion mc1x92644c617c015d217c0471af3609c71a8fbb4a87_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
@@ -6183,7 +5934,7 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		accept=application/json, text/plain, */*
-				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXgyMDkwMmRkYjdiYzQxMDhkODJiOTY5MGRjZjkxODg4OGFlODViNGZmX3Yy
+				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXg5MjY0NGM2MTdjMDE1ZDIxN2MwNDcxYWYzNjA5YzcxYThmYmI0YTg3X3Yy
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
@@ -6196,26 +5947,8 @@ Body:			<none>
         ]
     }
 }
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
 {
-    "account": {
-        "email": "test.2609@mailinator.com"
-    }
-}
-{
-    "access_token": "mc1x26f4b49cad99469d91983fd6522f0682fb8ca330_v2",
+    "access_token": "mc1xd1b6fbb29168cd28fa61a9754013ce5bb85fa13b_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -6266,7 +5999,7 @@ Body:
 }
 Codigo de respuesta 200
 body response {
-    "access_token": "mc1x26f4b49cad99469d91983fd6522f0682fb8ca330_v2",
+    "access_token": "mc1xd1b6fbb29168cd28fa61a9754013ce5bb85fa13b_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -6317,7 +6050,7 @@ body response {
 }
 Codigo de respuesta 200
 body response {
-    "access_token": "mc1x26f4b49cad99469d91983fd6522f0682fb8ca330_v2",
+    "access_token": "mc1xd1b6fbb29168cd28fa61a9754013ce5bb85fa13b_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -6367,21 +6100,8 @@ body response {
     "token_type": "tag:scmcoord.com,2013:api"
 }
 email de ver true
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x5711ee0be88668c65b7a5c777e0efbe9d0b9847f_v2",
+    "access_token": "mc1x11661ed3e652d4227f437786f469136e3da8a203_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -6431,7 +6151,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x5711ee0be88668c65b7a5c777e0efbe9d0b9847f_v2",
+    "access_token": "mc1x11661ed3e652d4227f437786f469136e3da8a203_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -6480,7 +6200,7 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x5711ee0be88668c65b7a5c777e0efbe9d0b9847f_v2
+Token en funcion mc1x11661ed3e652d4227f437786f469136e3da8a203_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
 Request method:	PATCH
@@ -6491,7 +6211,7 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		accept=application/json, text/plain, */*
-				authorization=tag:scmcoord.com,2013:api mc1x5711ee0be88668c65b7a5c777e0efbe9d0b9847f_v2
+				authorization=tag:scmcoord.com,2013:api mc1x11661ed3e652d4227f437786f469136e3da8a203_v2
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -6546,21 +6266,8 @@ Body:
         "uuid": "a0a51a23-85b5-48ef-bd57-27edf97e6443"
     }
 }
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x49121d89ac7149e28469df1006d645129b7807c7_v2",
+    "access_token": "mc1x019677ed4d979fa7a1a856da5bca3b78b09960ad_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -6610,7 +6317,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x49121d89ac7149e28469df1006d645129b7807c7_v2",
+    "access_token": "mc1x019677ed4d979fa7a1a856da5bca3b78b09960ad_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -6659,7 +6366,7 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x49121d89ac7149e28469df1006d645129b7807c7_v2
+Token en funcion mc1x019677ed4d979fa7a1a856da5bca3b78b09960ad_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
@@ -6676,8 +6383,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 {
-    "total_count": 2025,
-    "next_page": "6548,0,2909",
+    "total_count": 2027,
+    "next_page": "8160,0,2902",
     "list_shops": [
         {
             "id": 7192,
@@ -6688,7 +6395,7 @@ Body:			<none>
                 930886112,
                 930886696
             ],
-            "ads_counter": 23000,
+            "ads_counter": 23012,
             "category": {
                 "code": "1000"
             },
@@ -6729,7 +6436,7 @@ Body:			<none>
                 937586528,
                 937586537
             ],
-            "ads_counter": 14809,
+            "ads_counter": 14601,
             "category": {
                 "code": "2000"
             },
@@ -6770,7 +6477,7 @@ Body:			<none>
                 932824668,
                 932887117
             ],
-            "ads_counter": 12868,
+            "ads_counter": 12919,
             "category": {
                 "code": "1000"
             },
@@ -6797,7 +6504,7 @@ Body:			<none>
                 933805754,
                 933805802
             ],
-            "ads_counter": 9696,
+            "ads_counter": 9671,
             "category": {
                 "code": "1000"
             },
@@ -6828,33 +6535,6 @@ Body:			<none>
                 "path": "shops/0382306a-2d72-44ff-bef8-2338058d3e0f.jpg",
                 "width": 1132
             }
-        },
-        {
-            "id": 10550,
-            "ad_ids": [
-                935250015,
-                935330757,
-                935330783,
-                935330865,
-                935330933
-            ],
-            "ads_counter": 6864,
-            "category": {
-                "code": "1000"
-            },
-            "locations": [
-                {
-                    "code": "11",
-                    "key": "region",
-                    "locations": [
-                        {
-                            "code": "300",
-                            "key": "municipality"
-                        }
-                    ]
-                }
-            ],
-            "name": "Aire y Acero"
         },
         {
             "id": 10342,
@@ -6898,6 +6578,33 @@ Body:			<none>
             }
         },
         {
+            "id": 10550,
+            "ad_ids": [
+                935250015,
+                935330757,
+                935330783,
+                935330865,
+                935330933
+            ],
+            "ads_counter": 6850,
+            "category": {
+                "code": "1000"
+            },
+            "locations": [
+                {
+                    "code": "11",
+                    "key": "region",
+                    "locations": [
+                        {
+                            "code": "300",
+                            "key": "municipality"
+                        }
+                    ]
+                }
+            ],
+            "name": "Aire y Acero"
+        },
+        {
             "id": 9522,
             "ad_ids": [
                 933449728,
@@ -6906,7 +6613,7 @@ Body:			<none>
                 933477225,
                 933477286
             ],
-            "ads_counter": 5972,
+            "ads_counter": 5988,
             "category": {
                 "code": "1000"
             },
@@ -6933,7 +6640,7 @@ Body:			<none>
                 934204066,
                 934204069
             ],
-            "ads_counter": 5738,
+            "ads_counter": 5799,
             "category": {
                 "code": "1000"
             },
@@ -6960,7 +6667,7 @@ Body:			<none>
                 928591167,
                 928591251
             ],
-            "ads_counter": 5509,
+            "ads_counter": 5508,
             "category": {
                 "code": "2000"
             },
@@ -7001,7 +6708,7 @@ Body:			<none>
                 933324849,
                 933395176
             ],
-            "ads_counter": 4972,
+            "ads_counter": 5003,
             "category": {
                 "code": "1000"
             },
@@ -7042,7 +6749,7 @@ Body:			<none>
                 933517909,
                 933517913
             ],
-            "ads_counter": 4671,
+            "ads_counter": 4698,
             "category": {
                 "code": "1000"
             },
@@ -7083,7 +6790,7 @@ Body:			<none>
                 938820347,
                 938820349
             ],
-            "ads_counter": 3727,
+            "ads_counter": 3717,
             "category": {
                 "code": "1000"
             },
@@ -7198,63 +6905,36 @@ Body:			<none>
             }
         },
         {
-            "id": 6548,
+            "id": 8160,
             "ad_ids": [
-                928896047,
-                928896053,
-                928896058,
-                928896076,
-                928896079
+                935466342,
+                935466458,
+                935476223,
+                935476371,
+                935476637
             ],
-            "ads_counter": 2909,
+            "ads_counter": 2902,
             "category": {
                 "code": "1000"
             },
             "locations": [
                 {
-                    "code": "11",
+                    "code": "15",
                     "key": "region",
                     "locations": [
                         {
-                            "code": "300",
+                            "code": "514",
                             "key": "municipality"
                         }
                     ]
                 }
             ],
-            "name": "E-Inmob",
-            "thumbnail": {
-                "base_url": "https://img.segundamano.mx",
-                "height": 600,
-                "media_id": "85d904da-b403-42af-944f-fc55429649ef",
-                "path": "shops/85d904da-b403-42af-944f-fc55429649ef.jpg",
-                "width": 920
-            },
-            "cover": {
-                "base_url": "https://img.segundamano.mx",
-                "height": 600,
-                "media_id": "0b545528-fa17-4a16-b24e-dcc3e880c020",
-                "path": "shops/0b545528-fa17-4a16-b24e-dcc3e880c020.jpg",
-                "width": 1546
-            }
+            "name": "GLADIS BIENES RAICES"
         }
     ]
 }
-Request method:	POST
-Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
-Proxy:			<none>
-Request params:	<none>
-Query params:	lang=es
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Basic dGVzdC4yNjA5QG1haWxpbmF0b3IuY29tOnRlc3QwMTAxMDEwMQ==
-				Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 {
-    "access_token": "mc1x3236fe0c2b23c8ef01fa3b4f6e4ceeeba3b2e3c7_v2",
+    "access_token": "mc1xdac687c5e8c7bd7da1bb2088cb07559018439308_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -7304,7 +6984,7 @@ Body:			<none>
     "token_type": "tag:scmcoord.com,2013:api"
 }
 body response {
-    "access_token": "mc1x3236fe0c2b23c8ef01fa3b4f6e4ceeeba3b2e3c7_v2",
+    "access_token": "mc1xdac687c5e8c7bd7da1bb2088cb07559018439308_v2",
     "account": {
         "account_id": "/private/accounts/11881664",
         "can_publish": true,
@@ -7353,7 +7033,7 @@ body response {
     },
     "token_type": "tag:scmcoord.com,2013:api"
 }
-Token en funcion mc1x3236fe0c2b23c8ef01fa3b4f6e4ceeeba3b2e3c7_v2
+Token en funcion mc1xdac687c5e8c7bd7da1bb2088cb07559018439308_v2
 /private/accounts/11881664
 a0a51a23-85b5-48ef-bd57-27edf97e6443
 uuid funciona: a0a51a23-85b5-48ef-bd57-27edf97e6443
@@ -7365,7 +7045,7 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		accept=application/json, text/plain, */*
-				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXgzMjM2ZmUwYzJiMjNjOGVmMDFmYTNiNGY2ZTRjZWVlYmEzYjJlM2M3X3Yy
+				Authorization=Basic YTBhNTFhMjMtODViNS00OGVmLWJkNTctMjdlZGY5N2U2NDQzOm1jMXhkYWM2ODdjNWU4YzdiZDdkYTFiYjIwODhjYjA3NTU5MDE4NDM5MzA4X3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -7380,11 +7060,11 @@ Body:
 {
     "data": {
         "alert": {
-            "id": "1d630735-fb9b-4e50-9296-274c033084b3",
+            "id": "7831df20-679b-423c-a122-bb673933ada3",
             "title": "Venta inmuebles en Estado de México",
             "description": "",
             "url_path": "/anuncios/estado-de-mexico/venta-inmuebles",
-            "created_at": "2022-10-14T16:52:05.813870014Z",
+            "created_at": "2022-10-17T13:28:01.470583431Z",
             "filters": {
                 "category": "1020",
                 "region": "17"

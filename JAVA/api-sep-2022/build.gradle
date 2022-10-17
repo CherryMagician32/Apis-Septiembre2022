@@ -19,9 +19,19 @@ dependencies {
     testImplementation 'io.qameta.allure:allure-junit5:2.13.1'
     implementation 'io.qameta.allure:allure-rest-assured:2.13.9'
     testRuntimeOnly('io.qameta.allure:allure-junit5:2.14.0')
-
 }
 
 test {
     useJUnitPlatform()
+}
+
+allure {
+    version.set("2.19.0")
+    adapter {
+        allureJavaVersion.set("2.19.0")
+        aspectjVersion.set("1.9.5")
+        autoconfigure.set(true)
+        autoconfigureListeners.set(true)
+        aspectjWeaver.set(true)
+    }
 }
